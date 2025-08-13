@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles.css">
   <title>Hair Set</title>
 </head>
-<body>
+<body class="font-body bg-gray-100 text-gray-600">
   
   <!-- navbar -->
   <div class="flex py-2 px-3 justify-between bg-gray-200">
@@ -22,7 +22,7 @@
       </a>   
     </div>
     <div class="flex items-center">
-      <input type="search" id="search" placeholder="Find your item..." class="border-b">
+      <input type="search" id="search" placeholder="Find your item..." class="border-b focus:outline-none focus:ring-0">
         <button type="submit" class="cursor-pointer">
           <a href="">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -62,46 +62,143 @@
     </nav>
   </div>
   
-  <!-- product info -->
-  <section>
-    <div>
-      <img src="images/hairset.webp" alt="">
-    </div>
-    <div>
-      <h1></h1>
-      <p></p>
-    </div>
-  </section>
-
-  <section>
-  <!-- product description -->
-    <div>
-      <h2></h2>
-      <div>
-        <p></p>
+  <main class="px-16 pt-4">
+    <!-- product info -->
+    <section class="grid md:grid-cols-4 gap-4 items-center">
+      <div class="w-full md:col-span-1">
+        <img src="images/hairset.webp" alt="" class="object-cover">
       </div>
-    </div>
-    <!-- cart -->
-    <div>
-      <h2></h2>
-      <p>i want</p>
-      <p>pri</p>
-      <p>Add to Cart <span></span></p>
-      <input type="text"><hr>
-      <p>Free Shipping <span></span></p>      
-    </div>
-  </section>
+      <div class="md:col-span-2">
+        <h1 class="text-2xl">Hair Care Set</h1>
+        <p>4 Pcs Hair Care Set, Silicone Massage Brush, Oil Applicator Bottle, Air-Cushioned Detangling Comb, Hollow Design, Hair Dyeing And Cleaning Kit, Purple Salon Accessories</p>
+        <div class="lg:flex gap-2">
+          <span class="text-star">
+            <span class="text-gray-700">5 - </span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span><p>24k Reviews</p></span>
+        </div>
+      </div>
+    </section>
 
-  <!-- reviews -->
-  <section>
-    <h2>Reviews</h2>
-  </section>
-
-
-
+    <section class="flex py-4 gap-7">
+    <!-- product description -->
+      <div>
+        <h2 class="text-2xl">Product Details</h2>
+        <p>Textured Hair Type: Curly-textured-hair</p>
+        <p>Product Attributes: Unscented</p>
+        <p>Hair Style: Normal</p>
+        <p>Item ID: EG138747</p>
+        <p>Origin: Guangdong,China</p>
+      </div>
+      <!-- cart -->
+      <div class="rounded overflow-hidden shadow-md relative hover:shadow-lg cursor-pointer w-80 text-center bg-gray-200 p-2">
+        <h2 class="text-2xl">Cart</h2>
+        <hr>
+        <p>Item: 4 Pcs Hair set</p>
+        <p>Price: $38.00</p>
+        <hr>
+        <div class="py-3">
+          <label for="quantity">Quantity</label>
+          <select id="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <button class="btn text-white bg-primary hover:text-primary hover:bg-white">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <p>Free Shipping <i class="fa-solid fa-truck-fast"></i></p> 
+      </div>
+    </section>
+    <hr>
+    <!-- reviews -->
+    <section class="mb-4">
+      <h2 class="text-2xl my-3">Reviews</h2>
+      <div class="card flex items-center gap-3 p-3 mb-2">
+        <div><img src="images/144x144.png_.avif" alt="" class="w-12"></div>
+        <div>
+          <div class="flex gap-1">
+            <h3>Alice Green</h3>
+            <span class="text-star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corrupti quasi illo</p>
+          <p class="text-xs">23rd July, 2024</p>
+        </div>
+      </div>
+      <div class="card flex items-center gap-3 p-3 mb-2">
+        <div><img src="images/144x144.png_.avif" alt="" class="w-12"></div>
+        <div>
+          <div class="flex gap-1">
+            <h3>Matthew White</h3>
+            <span class="text-star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus consectetur ipsa amet? Dignissimos, officiis beatae!</p>
+          <p class="text-xs">23rd July, 2024</p>
+        </div>
+      </div>
+      <div class="card flex items-center gap-3 p-3 mb-2">
+        <div><img src="images/144x144.png_.avif" alt="" class="w-12"></div>
+        <div>
+          <div class="flex gap-1">
+            <h3>Agnes Peters</h3>
+            <span class="text-star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus./p>
+          <p class="text-xs">23rd July, 2024</p>
+        </div>
+      </div>
+      <div class="card flex items-center gap-3 p-3 mb-2">
+        <div><img src="images/144x144.png_.avif" alt="" class="w-12"></div>
+        <div>
+          <div class="flex gap-1">
+            <h3>Sapphire Grayson</h3>
+            <span class="text-star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dignissimos eaque eius omnis aliquid</p>
+          <p class="text-xs">23rd July, 2024</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
   <!-- footer -->
   <footer class="bg-gray-200 p-8">
-    <div class="flex justify-between">
+    <div class="md:flex md:justify-between grid grid-cols-2 gap-4">
       <div>
         <a href="./index.html" class="flex items-center hover:text-primary hover:scale-105">
         <h1 class="text-3xl mr-2">Labs</h1>
