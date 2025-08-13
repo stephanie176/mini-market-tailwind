@@ -4,7 +4,7 @@
 
 @theme {
   --color-primary: #f97a00;
-  --color-secondary-100: #e2e2d5;
+  --color-secondary-100: #f1e3d3;
   --color-secondary-200: #888883;
 }
 
@@ -22,4 +22,8 @@
 
 .cart {
   @apply bg-white rounded px-3 py-1 cursor-pointer;
+}
+
+.cta1 {
+  @apply place-content-center rounded bg-secondary-100 cursor-pointer p-4;
 }
